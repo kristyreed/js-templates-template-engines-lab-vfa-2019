@@ -15,5 +15,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
+    <div class="comment"><p>comment</p><p>Posted By: <span class="commenter">commenter</span></p></div>
+    let commentTemplate = '<div class="comment"><p><%= comment%></p><p> "Posted By:" <span class="commenter"><%= commenter %></span></p></div>'
   </body>
 </html>
