@@ -16,6 +16,18 @@
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
     <div class="comment"><p>comment</p><p>Posted By: <span class="commenter">commenter</span></p></div>
-    let commentTemplate = '<div class="comment"><p><%= comment%></p><p> "Posted By:" <span class="commenter"><%= commenter %></span></p></div>'
+    <article>
+  <header><h2>The Results are In!</h2></header>
+  <p>
+    After careful consideration and a generous grant from NASA, our team has determined that a woodchuck could chuck five wood, with a standard deviation of +/- .37 wood.
+  </p>
+  <footer>posted by Chuck Wooden</footer>
+  <form onsubmit="postComment();return false;">
+    Name: <input type="text" id="commenterName"><br>
+    Comment: <input type="textarea" id="commentText"><br>
+    <input type="submit">
+  </form>
+  <div id="comments"></div>
+</article>*******
   </body>
 </html>
